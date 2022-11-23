@@ -14,9 +14,16 @@ import { FooterComponent } from './shared/component/footer/footer.component';
 import { formatCurrency } from '@angular/common';
 import { FormComponent } from './shared/component/form/form.component';
 import { PodscatComponent } from './shared/component/podscat/podscat.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatToolbarModule, MatIconModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    HttpClientModule,
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
